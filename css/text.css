@@ -1,0 +1,256 @@
+/* Start Varibales */
+:root{
+    --main-color: #19c8fa;
+    --transparent-color: rab(15 116 143 / 70%);
+    --section-padding: 100px;
+}
+/* End Varibales */
+/* Start Global Ruls */
+html{scroll-behavior: smooth;}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+}
+/* End Global Ruls */
+/********************** Start Nav **********************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+nav ul{
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul a{text-decoration: none;color:  hsl(176, 68%, 64%);}
+nav ul a:hover{color: white;text-decoration: underline;}
+/********************** End Nav **********************/
+
+
+/********************** Start Header **********************/
+header{display: grid;text-align: center;}
+header .one{margin: 20px auto;}
+header .two{width: 600px;margin: 20px auto;}
+header .two h1{font-family: 'Raleway', sans-serif;}
+header .two p{
+    font-family: 'Open Sans', sans-serif;
+    width: 475px;
+    margin: 35px auto;
+}
+header button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: hsl(176, 68%, 64%);
+    color: white;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px 50px;
+    border-radius: 30px;
+}
+header button:hover{cursor: pointer;}
+/********************** End Header **********************/
+
+
+/********************** Start Files **********************/
+.files{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px 50px;
+    text-align: center;
+    margin: 200px auto;
+    width: 1400px;
+}
+.files .real-up h1{font-family: 'Raleway', sans-serif;}
+.files .real-up p{
+    font-family: 'Open Sans', sans-serif;
+    width: 430px;
+    margin: 20px auto;
+}
+.files .real{
+    text-align: start;
+    width: 560px;
+    margin: 20px auto;
+}
+.files .real h1{font-family: 'Raleway', sans-serif;}
+.files .real p{font-family: 'Open Sans', sans-serif;padding: 20px 0;}
+.files .real a{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.files .real a::before{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 1px;
+    background-color: white;
+    margin-top: 25px;
+}
+.files .real a img{width: 10px;}
+/********************** End Files **********************/
+
+
+
+
+
+/********************** Start Contant Us **********************/
+.content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 20px;
+    margin: 20px auto;
+    width: 1400px;
+}
+.content .image-up {
+    position: absolute;
+    top: -12%;
+    left: 6%;
+    z-index: -1;
+}
+.content .satish{
+    width: 330px;
+    padding: 25px;
+    background-color:hsl(219, 30%, 18%);
+    border-radius: 10px;
+}
+.content .satish .patel, .content .bruce .patel,.content .iva .patel{
+    display: flex;
+    align-items: center;
+}
+.content .satish .patel .image img, .content .bruce .patel .image img, .content .iva .patel .image img {
+    border-radius: 50%;
+    width: 40px;
+}
+.content .satish .cont, .content .bruce .cont, .content .iva .cont{
+    margin-left: 15px;
+    line-height: 0.20;
+}
+.content .satish .cont h3, .content .bruce .cont h3, .content .iva .cont h3{
+    font-family: 'Raleway', sans-serif;
+}
+.content .satish p, .content .bruce p, .content .iva p{
+    font-family: 'Open Sans', sans-serif;
+}
+.content .bruce{
+    width: 330px;
+    padding: 25px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 10px;
+}
+.content .iva{
+    width: 330px;
+    padding: 25px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 10px;
+}
+/********************** End Contant Us **********************/
+
+
+
+
+/********************** Start Contant Us **********************/
+.early-up{position: relative;height: 450px;}
+.early{
+    width: 666px;
+    text-align: center;
+    background-color:  hsl(217, 28%, 15%);
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 10px;
+}
+.early h1{font-family: 'Raleway', sans-serif;}
+.early p{font-family: 'Open Sans', sans-serif;}
+.early form{display: flex;align-items: center;}
+.early input[type="email"]{
+    font-family: 'Open Sans', sans-serif;
+    width: 350px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 30px;
+    outline: none;
+}
+.early input[type="submit"]{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: hsl(176, 68%, 64%);
+    color: white;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    margin-left: 15px;
+}
+/********************** End Contant Us **********************/
+
+
+
+
+/********************** Start Footer **********************/
+footer{
+    background-color:  hsl(216, 53%, 9%);
+    padding: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+footer > img{
+    padding: 60px 0px;
+}
+footer .foot{
+    display: flex;
+    justify-content: space-between;
+}
+footer .foot .location {
+    display: flex;
+    align-items: baseline;
+    width: 300px;
+}
+footer .foot .location p{margin-left: 15px;}
+footer .foot .coll-up .coll, footer .foot .coll-up .email{
+    display: flex;
+    align-items: center;
+}
+footer .foot .coll-up .coll p, footer .foot .coll-up .email p{
+    margin-left: 15px;
+}
+footer .foot .contact p:hover{
+    cursor: pointer;
+    color: white;
+}
+footer .foot .social{
+    display: flex;
+    align-items: baseline;
+}
+footer .foot .social img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    margin-left: 10px;
+    background-color: white;
+    transition: 0.3s;
+}
+footer .foot .social img:hover{
+    cursor: pointer;
+    border-color: violet;
+}
+/********************** End Footer **********************/
