@@ -20,6 +20,11 @@ body{
     background-color: hsl(218, 28%, 13%);
     color: white;
 }
+@media (max-width:375px){
+    body{
+
+    }
+}
 /* End Global Ruls */
 /********************** Start Nav **********************/
 nav{
@@ -33,9 +38,7 @@ nav ul{
     list-style: none;
     display: flex;
 }
-nav ul li{
-    padding: 20px;
-}
+nav ul li{padding: 20px;}
 nav ul a{text-decoration: none;color:  hsl(176, 68%, 64%);}
 nav ul a:hover{color: white;text-decoration: underline;}
 /********************** End Nav **********************/
@@ -55,7 +58,7 @@ header button{
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: bold;
-    background-color: hsl(176, 68%, 64%);
+    background-color:hsl(198, 60%, 50%);
     color: white;
     width: 300px;
     margin: 20px auto;
@@ -63,6 +66,32 @@ header button{
     border-radius: 30px;
 }
 header button:hover{cursor: pointer;}
+@media (max-width:375px){
+    nav{
+
+    }
+    header{
+        width: 400%;
+        font-size: 50px;
+    }
+    header .one{
+        width: 85%;
+    }
+    header .two{
+        width: 90%;
+        margin-top: 100px;
+        line-height: 1.5;
+    }
+    header .two p{
+        width: 75%;
+    }
+    header button{
+        width: 40%;
+        font-size: 35px;
+        border-radius: 50px;
+        padding: 30px 50px;
+    }
+}
 /********************** End Header **********************/
 
 
@@ -86,7 +115,7 @@ header button:hover{cursor: pointer;}
     width: 560px;
     margin: 20px auto;
 }
-.files .real h1{font-family: 'Raleway', sans-serif;}
+.files .real h1{font-family: 'Raleway', sans-serif;width: 50%;}
 .files .real p{font-family: 'Open Sans', sans-serif;padding: 20px 0;}
 .files .real a{
     color: white;
@@ -102,6 +131,45 @@ header button:hover{cursor: pointer;}
     margin-top: 25px;
 }
 .files .real a img{width: 10px;}
+@media (max-width:375px){
+    .files{
+        display: block;
+        width: 1500px;
+    }
+    .files .real-up{
+        font-size: 40px;
+        margin-bottom: 200px;
+    }
+    .files .real-up .image img{
+        width: 20%;
+        margin-bottom: 100px;
+    }
+    .files .real-up p{
+        width:65%;
+    }
+    .files .image img{
+        width: 75%;
+    }
+    .files .real{
+        font-size: 35px;
+        width: 85%;
+        margin-top: 200px;
+    }
+    .files .real h1{
+        margin-bottom: 50px;
+    }
+    .files .real p{
+        width: 69%;
+    }
+    .files .real a::before{
+        content: "";
+        position: absolute;
+        width: 344px;
+        height: 3px;
+        background-color: white;
+        margin-top: 55px;
+    }
+}
 /********************** End Files **********************/
 
 
@@ -160,6 +228,44 @@ header button:hover{cursor: pointer;}
     background-color: hsl(219, 30%, 18%);
     border-radius: 10px;
 }
+@media (max-width:375px){
+    .content{
+        display: block;
+        width: 400%;
+    }
+    .content .image-up {
+        position: relative;
+    }
+    .content .satish{
+        width: 90%;
+        margin: 100px auto;
+        font-size: 50px;
+        padding: 100px;
+        margin-top: 0;
+    }
+    .content .bruce{
+        width: 90%;
+        margin: 100px auto;
+        font-size: 50px;
+        padding: 100px;
+    }
+    .content .iva{
+        width: 90%;
+        margin: 100px auto;
+        font-size: 50px;
+        padding: 100px;
+    }
+    .content .satish .patel, .content .bruce .patel,.content .iva .patel{
+        margin-top: 60px;
+    }
+    .content .satish .patel .image img, .content .bruce .patel .image img, .content .iva .patel .image img{
+        width: 100%;
+    }
+    .content .satish .cont, .content .bruce .cont, .content .iva .cont{
+        line-height: 1.5;
+        margin-left: 40px;
+    }
+}
 /********************** End Contant Us **********************/
 
 
@@ -201,6 +307,31 @@ header button:hover{cursor: pointer;}
     border-radius: 30px;
     border: none;
     margin-left: 15px;
+}
+@media (max-width:375px){
+    .early{
+        transform: translate(-11%, 10%);
+        width: 1430px;
+        font-size: 40px;
+        padding: 150px;
+    }
+    .early p{
+        width: 1200px;
+        margin: 100px auto;
+        font-size: 60px;
+    }
+    .early form{
+        display: block;
+        width: 500px;
+        font-size: 50px;
+    }
+    .early form input[type="email"], .early input[type="submit"]{
+        width: 1100px;
+        padding: 60px 50px;
+        border-radius: 150px;
+        font-size: 50px;
+        margin: 50px auto;
+    }
 }
 /********************** End Contant Us **********************/
 
@@ -252,5 +383,47 @@ footer .foot .social img{
 footer .foot .social img:hover{
     cursor: pointer;
     border-color: violet;
+}
+@media (max-width:375px){
+    footer{
+        width: 400%;
+        font-size: 60px;
+        margin-top: 1000px;
+    }
+    footer > img{
+        padding-top: 600px;
+        width: 700px;
+    }
+    footer .foot{
+        display: block;
+    }
+    footer .foot .location{
+        width: 90%;
+        margin: 50px 0;
+    }
+    footer .foot .location img{
+        width: 15%;
+    margin: 0px 35px;
+    }
+    footer .foot .coll-up .coll img, footer .foot .coll-up .email img{
+        width: 5%;
+        margin: 35px 25px;
+    }
+    footer .foot .coll-up .email{
+        margin-bottom: 300px;
+    }
+    footer .about, footer .contact{
+        display: grid;
+        gap: 55px;
+        margin: 0px 30px;
+        margin-bottom: 250px;
+    }
+    footer .foot .social{
+        justify-content: center;
+    }
+    footer .foot .social img{
+        width: 7%;
+        margin: 0 20px;
+    }
 }
 /********************** End Footer **********************/
