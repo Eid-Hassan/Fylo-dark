@@ -198,9 +198,10 @@ header button:hover{cursor: pointer;}
     background-color:hsl(219, 30%, 18%);
     border-radius: 10px;
 }
-.content .satish .patel, .content .bruce .patel,.content .iva .patel{
+.content .satish .patel, .content .bruce .patel, .content .iva .patel{
     display: flex;
     align-items: center;
+    margin-top: 30px;
 }
 .content .satish .patel .image img, .content .bruce .patel .image img, .content .iva .patel .image img {
     border-radius: 50%;
@@ -208,7 +209,6 @@ header button:hover{cursor: pointer;}
 }
 .content .satish .cont, .content .bruce .cont, .content .iva .cont{
     margin-left: 15px;
-    line-height: 0.20;
 }
 .content .satish .cont h3, .content .bruce .cont h3, .content .iva .cont h3{
     font-family: 'Raleway', sans-serif;
@@ -356,13 +356,22 @@ footer .foot .location {
     align-items: baseline;
     width: 300px;
 }
-footer .foot .location p{margin-left: 15px;}
+footer .foot .location p, footer .foot .coll-up .coll p, footer .foot .coll-up .email p{margin-left: 15px;}
+footer .foot .coll-up{
+    display: flex;
+    flex-direction: column;
+}
 footer .foot .coll-up .coll, footer .foot .coll-up .email{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
-footer .foot .coll-up .coll p, footer .foot .coll-up .email p{
-    margin-left: 15px;
+footer .foot .about, footer .foot .contact{
+    display: flex;
+    flex-direction: column;
+}
+footer .foot .about p, footer .foot .contact p{
+    margin-bottom: 20px;
 }
 footer .foot .contact p:hover{
     cursor: pointer;
